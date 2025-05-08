@@ -80,14 +80,56 @@
     "name": "Liam Patterson",
     "birthday": "08/27/1995",
     "type": "Savings",
-    "account": "0596779403556",
+    "account": "7596779403556",
     "balance": 1234.56
   },
   {
     "name": "Olivia Danielle Ross",
     "birthday": "12/19/1982",
     "type": "Checking",
-    "account": "5647382910564",
+    "account": "5667382910564",
     "balance": 140.31
+  },
+  {
+    "name": "Minoseto Roger",
+    "birthday": "12/01/1982",
+    "type": "Savings",
+    "account": "5647382910543",
+    "balance": 5678.59
+  },
+  {
+    "name": "North West",
+    "birthday": "10/19/1981",
+    "type": "Checking",
+    "account": "7847382910564",
+    "balance": 1000.20
+  },
+  {
+    "name": "Kyelle Bebier",
+    "birthday": "05/05/1995",
+    "type": "Checking",
+    "account": "8647382910564",
+    "balance": 14000.50
+  },
+  {
+    "name": "Kela Robertto King",
+    "birthday": "02/08/1998",
+    "type": "Savings",
+    "account": "5554382910564",
+    "balance": 7629.75
+  },
+  {
+    "name": "Briiliant John",
+    "birthday": "11/14/1995",
+    "type": "Savings",
+    "account": "2647382912562",
+    "balance": 2389.90
+  },
+  {
+    "name": "Selena Eric",
+    "birthday": "06/06/1980",
+    "type": "Checking",
+    "account": "8647082910568",
+    "balance": 1945.89
   }
 ]

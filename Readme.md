@@ -18,6 +18,7 @@ This is a full-stack **Client Directory** web application built with the **MERN*
 - 🌐 REST API built with Express.js and Node.js
 - ☁️ MongoDB Atlas integration using Mongoose
 - ♻️ Scalable project structure (MVC, routes, services, etc.)
+- Lazy Loading for the UI components
 
 ---
 

@@ -30,7 +30,7 @@ width: 100%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 /* Search Box Styles */
@@ -41,7 +41,7 @@ width: 100%;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .search-header {
@@ -194,7 +194,7 @@ input, select {
   width: 100%;
   position: relative;
   z-index: 1;
-  margin-top: 298px;
+  margin-top: 70px;
 }
 
 .table-container {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/n2.css';
+import { motion } from 'framer-motion';
 
 function ClientTable({ searchParams }) {
   const [clients, setClients] = useState([]);
@@ -20,6 +21,13 @@ function ClientTable({ searchParams }) {
   }, [searchParams]);
 
   return (
+    <motion.div
+      className="table-wrapper"
+      layout
+      initial={{ opacity: 0, y: 5 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+    >
     <div className="table-container">
       <table>
         <thead>
@@ -49,6 +57,7 @@ function ClientTable({ searchParams }) {
         </tbody>
       </table>
     </div>
+    </motion.div>
   );
 }
 
