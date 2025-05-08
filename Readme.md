@@ -75,12 +75,7 @@ Runs at http://localhost:3000
 | GET    | `/api/clients/search?birthday=...` | Filter clients by birthday     |
 | GET    | `/api/clients/search?type=...`     | Filter clients by account type |
 
-##📸 ScreenShots
-
-
-
-
-
+## Screenshots
 
 ##🧠 Lessons Learned
 Used MongoDB Atlas with Mongoose as a cloud database
