@@ -42,7 +42,7 @@ project-root/
 ## Backend Setup
 Nodejs setup:
 cd server
-npm install express mongoose cors
+npm install
 
 ## Create a .env file:
 MONGODB_URI=mongodb+srv://<your-username>:<your-password>@cluster0.mongodb.net/clientdb
@@ -66,7 +66,7 @@ npm start
 Runs at http://localhost:3000
 
 
-## Sample Endpoints
+## 🧪 Sample Endpoints
 | Method | Endpoint                           | Description                    |
 | ------ | ---------------------------------- | ------------------------------ |
 | GET    | `/api/clients`                     | Get all clients                |
@@ -74,26 +74,26 @@ Runs at http://localhost:3000
 | GET    | `/api/clients/search?birthday=...` | Filter clients by birthday     |
 | GET    | `/api/clients/search?type=...`     | Filter clients by account type |
 
-## ScreenShots
+##📸 ScreenShots
 
 
 
 
 
 
-## Lessons Learned
+##🧠 Lessons Learned
 Used MongoDB Atlas with Mongoose as a cloud database
 Implemented modular React + CSS layout with good spacing, mobile-friendliness
 Integrated RESTful search and list APIs into a clean UI
 Migrated from static JSON data to MongoDB in a scalable way
 
-## Future Improvements
+## 📝 Future Improvements
 Add Create / Update / Delete client APIs
 Form validation and alerts
 Role-based authentication
 Mobile responsiveness enhancement
 
-## Author
+## 👩‍💻 Author
 Krithika Fnu
 
 Frontend Engineer | React | Node.js | MongoDB | MERN Stack Developer
