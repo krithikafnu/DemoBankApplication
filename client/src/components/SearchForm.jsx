@@ -7,6 +7,9 @@ function SearchForm({ onSearch }) {
     birthday: '', 
     type: '' 
   });
+  const [showProfile, setShowProfile] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
 
   const handleChange = e => {
     setFilters({ ...filters, [e.target.name]: e.target.value });
@@ -16,6 +19,13 @@ function SearchForm({ onSearch }) {
     e.preventDefault();
     onSearch(filters);
   };
+
+  const settingsOptions = [
+    "Account Settings",
+    "Transaction History",
+    "Security Settings",
+    "Help Center"
+  ];
 
   return (
     <div className="search-container">
@@ -62,9 +72,67 @@ function SearchForm({ onSearch }) {
           <img src="/assets/search_icon.png" alt="Search" className="search-icon" />
         </button>
         <span className="icons">
-          <img src="/assets/bell_icon.png" alt="Notifications" className="icon bell" />
-          <img src="/assets/gear_icon.png" alt="Settings" className="icon gear" />
-          <img src="/assets/user_profile.jpg" alt="User Profile" className="user-profile" />
+          <div className="icon-container">
+            <img 
+              src="/assets/bell_icon.png" 
+              alt="Notifications" 
+              className="icon bell" 
+              onClick={() => setShowNotifications(!showNotifications)}
+            />
+            {showNotifications && (
+              <div className="notification-popup">
+                <div className="popup-header">
+                  <span>Notifications</span>
+                  <button onClick={() => setShowNotifications(false)}>X</button>
+                </div>
+                <p>No New Notifications</p>
+              </div>
+            )}
+          </div>
+          
+          <div className="icon-container">
+            <img 
+              src="/assets/gear_icon.png" 
+              alt="Settings" 
+              className="icon gear" 
+              onClick={() => setShowSettings(!showSettings)}
+            />
+            {showSettings && (
+              <div className="settings-popup">
+                <div className="popup-header">
+                  <span>Settings</span>
+                  <button onClick={() => setShowSettings(false)}>X</button>
+                </div>
+                <ul>
+                  {settingsOptions.map((option, index) => (
+                    <li key={index}>{option}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          
+          <div className="icon-container">
+            <img 
+              src="/assets/user_profile.jpg" 
+              alt="User Profile" 
+              className="user-profile" 
+              onClick={() => setShowProfile(!showProfile)}
+            />
+            {showProfile && (
+              <div className="profile-popup">
+                <div className="popup-header">
+                  <span>Profile</span>
+                  <button onClick={() => setShowProfile(false)}>X</button>
+                </div>
+                <img 
+                  src="/assets/user_profile.jpg" 
+                  alt="User Profile" 
+                  className="profile-image-expanded" 
+                />
+              </div>
+            )}
+          </div>
         </span>
       </form>
     </div>
