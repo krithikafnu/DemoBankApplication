@@ -14,8 +14,8 @@ function ClientTable({ searchParams }) {
     const fetchClients = async () => {
       const query = new URLSearchParams(searchParams).toString();
       const url = query
-        ? `http://localhost:5001/api/clients/search?${query}`
-        : `http://localhost:5001/api/clients`;
+        ? `https://bankapplication-5y36.onrender.com/api/clients/search?${query}`
+        : `https://bankapplication-5y36.onrender.com/api/clients`;
 
       const res = await fetch(url);
       const data = await res.json();
@@ -26,7 +26,7 @@ function ClientTable({ searchParams }) {
   }, [searchParams]);
 
   const fetchClientDetails = async (account) => {
-    const res = await fetch(`http://localhost:5001/api/clients/${account}`);
+    const res = await fetch(`https://bankapplication-5y36.onrender.com/api/clients/${account}`);
     const data = await res.json();
     setSelectedClient(data);
     setShowDetails(true);
@@ -35,7 +35,7 @@ function ClientTable({ searchParams }) {
   const handleCloseAccount = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5001/api/clients/${clientToClose}/close`,
+        `https://bankapplication-5y36.onrender.com/api/clients/${clientToClose}/close`,
         { method: 'PATCH' }
       );
       if (response.ok) {
